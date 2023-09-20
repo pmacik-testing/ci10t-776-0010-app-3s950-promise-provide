@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-xyne
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0010-tenant/ci10t-776-0010-app/devfile-sample-xyne@sha256:168e03c3bb68f94b6412f3519f2e134b0cc1f6d358b6e9b7b60ada178f7d428c
+        name: my-nodejs
+        resources: {}
+status: {}
